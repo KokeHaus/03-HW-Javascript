@@ -25,6 +25,8 @@ var pwlength = $('#charInput').val();
 console.log(pwlength)
 var charselect =document.getElementById('dropdownchars');
 var charchoice = charselect.options[charselect.selectedIndex].value;
+if(charchoice === "numbers")
+  chars = "0123456789";
 if(charchoice === "lowercase")
   chars = "abcdefghijklmnopqrstuvwxyz";
 if(charchoice === "lowercase+numbers")
